@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nvaraa</title>
+  <meta name="description" content="Nvaraa builds the first teams for early-stage startups and Global Capability Centres in India. Every company hires differently. We hire for yours." />
+  <meta name="theme-color" content="#fefaf7" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <meta property="og:title" content="Nvaraa — Talent Search for Startups and GCCs" />
+  <meta property="og:description" content="Every company hires differently. We hire for yours." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Nvaraa home">
+        <img src="assets/nvaraa-logo.png" alt="Nvaraa" width="166" height="30" />
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#who">Who we serve</a>
+        <a href="#approach">Approach</a>
+        <!--<a href="#teams">Teams we've built</a>-->
+      </nav>
+      <a href="mailto:contact@nvaraa.com?subject=Hiring%20with%20Nvaraa" data-email-picker class="btn btn--dark btn--sm nav__cta">Talk to us</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="#who">Who we serve</a>
+      <a href="#approach">Approach</a>
+      <!--<a href="#teams">Teams we've built</a> -->
+      <a href="mailto:contact@nvaraa.com?subject=Hiring%20with%20Nvaraa" data-email-picker class="btn btn--dark">Talk to us</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="blob blob--3"></div>
+        <svg class="hero__rings" viewBox="0 0 1200 1200" preserveAspectRatio="xMidYMid slice">
+          <g fill="none" stroke="currentColor">
+            <circle cx="600" cy="600" r="220" />
+            <circle cx="600" cy="600" r="330" />
+            <circle cx="600" cy="600" r="440" stroke-dasharray="2 10" />
+            <circle cx="600" cy="600" r="560" />
+          </g>
+          <g class="hero__orbit hero__orbit--a"><circle cx="600" cy="270" r="5" /></g>
+          <g class="hero__orbit hero__orbit--b"><circle cx="600" cy="40" r="4" /></g>
+          <g class="hero__orbit hero__orbit--c"><circle cx="600" cy="160" r="3" /></g>
+        </svg>
+        <div class="hero__grid"></div>
+        <div class="grain"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="pill reveal" data-delay="0">
+        
+          Talent Search for Startups and GCCs
+        </p>
+
+        <h1 class="hero__title" data-split>
+          <span class="line">Every company hires differently.</span>
+          <span class="line">We hire <em>for yours.</em></span>
+        </h1>
+
+        <div class="hero__actions reveal" data-delay="900">
+          <a href="mailto:contact@nvaraa.com?subject=Hiring%20with%20Nvaraa" data-email-picker class="btn btn--dark btn--lg magnetic">
+            Talk to us
+            <span class="btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+          <a href="#who" class="btn btn--ghost btn--lg">How we work</a>
+        </div>
+      </div>
+
+      <a href="#who" class="hero__scroll" aria-label="Scroll to next section">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ WHO WE SERVE ============ -->
+    <section class="section section--grey" id="who">
+      <div class="container">
+        <div class="split">
+          <div class="split__text">
+            
+            <h2 class="h2" data-split>
+              We build the teams that build <em>your company.</em>
+            </h2>
+            <p class="lead reveal" data-delay="200">
+              The first 50 people decide how a company thinks, builds and scales.
+              Getting them right is what we do best.
+            </p>
+          </div>
+
+          <div class="team50 reveal" data-delay="150" aria-hidden="true">
+            <div class="team50__head">
+              <span>First hires</span>
+              <span class="team50__count"><b id="hireCount">00</b>/50</span>
+            </div>
+            <div class="team50__grid" id="team50"></div>
+            <div class="team50__foot">
+              <span>Hire 01</span>
+              <span class="team50__bar"><i id="hireBar"></i></span>
+              <span>Hire 50</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards2">
+          <article class="card card--glow reveal">
+            <div class="card__top">
+              <span class="card__icon">
+                <svg viewBox="0 0 24 24"><path d="M12 3c3 2.5 4.5 5.8 4.5 9.5L12 17l-4.5-4.5C7.5 8.8 9 5.5 12 3Z"/><circle cx="12" cy="9.5" r="1.6"/><path d="M8 14.5 5.5 17l1 3 3-1.5M16 14.5l2.5 2.5-1 3-3-1.5"/></svg>
+              </span>
+              
+            </div>
+            <h3 class="card__title">Early Stage Startups</h3>
+            <p class="card__body">
+              The right candidates may not have heard of you yet. We tell your story well,
+              from the founders to the problem to the plan, so the right people say yes.
+            </p>
+            
+          </article>
+
+          <article class="card card--glow reveal" data-delay="120">
+            <div class="card__top">
+              <span class="card__icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3Z"/></svg>
+              </span>
+            
+            </div>
+            <h3 class="card__title">GCCs</h3>
+            <p class="card__body">
+              Entering a new market means introducing your brand to a new talent pool.
+              We position your India team to find the people who will shape it from day one.
+            </p>
+            
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPROACH ============ -->
+    <section class="section" id="approach">
+      <div class="container">
+        <div class="center-head">
+          
+          <h2 class="h2" data-split>
+            We stay with you from the first brief to <em>well after joining.</em>
+          </h2>
+        </div>
+
+        <div class="journey reveal" aria-hidden="true">
+          <div class="journey__track"><i id="journeyFill"></i></div>
+          <ol class="journey__steps">
+            <li><span class="journey__node"></span>First brief</li>
+            <li><span class="journey__node"></span>Market map</li>
+            <li><span class="journey__node"></span>Offer</li>
+            <li><span class="journey__node"></span>Joining &amp; beyond</li>
+          </ol>
+        </div>
+
+        <div class="cards3">
+          <article class="principle reveal">
+            
+            <span class="principle__icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" /><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3"/></svg>
+            </span>
+            <h3>Precision</h3>
+            <p>We map the market and approach only people who truly fit your brief.</p>
+          </article>
+          <article class="principle reveal" data-delay="120">
+            
+            <span class="principle__icon">
+              <svg viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
+            <h3>Transparency</h3>
+            <p>Candid feedback at every stage, for both you and your candidates.</p>
+          </article>
+          <article class="principle reveal" data-delay="240">
+            
+            <span class="principle__icon">
+              <svg viewBox="0 0 24 24"><path d="M8.5 13.5 6 16a2.1 2.1 0 0 1-3-3l4.6-4.6a2.1 2.1 0 0 1 3 0"/><path d="M15.5 10.5 18 8a2.1 2.1 0 0 1 3 3l-4.6 4.6a2.1 2.1 0 0 1-3 0"/><path d="m9 15 6-6"/></svg>
+            </span>
+            <h3>Relationship</h3>
+            <p>We stay close to both sides from the first brief to well after joining.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TEAMS WE'VE BUILT ============ 
+    <section class="section section--grey" id="teams">
+      <div class="container">
+        <div class="teams-head">
+          <div>
+            
+            <h2 class="h2" data-split>
+              Built from scratch, <em>side by side.</em>
+            </h2>
+          </div>
+          
+        </div>
+
+        // Placeholder testimonials: replace quote, name, role and company with real client testimonials (50–80 words each).
+        <div class="quotes" id="quotes">
+          <figure class="quote reveal">
+            <svg class="quote__mark" viewBox="0 0 40 32" aria-hidden="true"><path d="M0 32V19.2C0 8.6 5.4 2.2 16.2 0l1.6 4.4C12 6 9 9.6 8.8 15H16v17H0Zm22 0V19.2C22 8.6 27.4 2.2 38.2 0l1.6 4.4C34 6 31 9.6 30.8 15H38v17H22Z"/></svg>
+            <blockquote>
+              [Client testimonial, 50–80 words.] Describe how Nvaraa understood the company, the roles that mattered most, and what the first hires changed for the team. Keep it specific: the brief, the search, and how the relationship continued after joining.
+            </blockquote>
+            <figcaption>
+              <span class="avatar">CN</span>
+              <span><b>Client Name</b><i>Role, Company</i></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote reveal" data-delay="120">
+            <svg class="quote__mark" viewBox="0 0 40 32" aria-hidden="true"><path d="M0 32V19.2C0 8.6 5.4 2.2 16.2 0l1.6 4.4C12 6 9 9.6 8.8 15H16v17H0Zm22 0V19.2C22 8.6 27.4 2.2 38.2 0l1.6 4.4C34 6 31 9.6 30.8 15H38v17H22Z"/></svg>
+            <blockquote>
+              [Client testimonial, 50–80 words.] A GCC leader on setting up the India team: how Nvaraa introduced the brand to a new talent pool, the quality of candidates presented, and the candid feedback shared at each stage of the process.
+            </blockquote>
+            <figcaption>
+              <span class="avatar">CN</span>
+              <span><b>Client Name</b><i>Role, Company</i></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote reveal" data-delay="240">
+            <svg class="quote__mark" viewBox="0 0 40 32" aria-hidden="true"><path d="M0 32V19.2C0 8.6 5.4 2.2 16.2 0l1.6 4.4C12 6 9 9.6 8.8 15H16v17H0Zm22 0V19.2C22 8.6 27.4 2.2 38.2 0l1.6 4.4C34 6 31 9.6 30.8 15H38v17H22Z"/></svg>
+            <blockquote>
+              [Client testimonial, 50–80 words.] A founder on building the first team: why the right people said yes, how precise the shortlist was, and what it felt like to have a partner who stayed close to both sides.
+            </blockquote>
+            <figcaption>
+              <span class="avatar">CN</span>
+              <span><b>Client Name</b><i>Role, Company</i></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ============ CTA ============ -->
+    <section class="section section--cta" id="contact">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__glow" aria-hidden="true"></div>
+          <div class="grain grain--dark" aria-hidden="true"></div>
+          <img class="cta__mark" src="assets/nvaraa-mark-coral.png" alt="" aria-hidden="true" />
+          <h2 class="cta__title" data-split>
+            Every great team starts with <em>one conversation.</em>
+          </h2>
+          <p class="cta__text reveal" data-delay="200">
+            Tell us about your company and the people you're looking for. We'll take it from there,
+            and stay with you well beyond the offer.
+          </p>
+          <div class="cta__actions reveal" data-delay="320">
+            <a href="mailto:contact@nvaraa.com?subject=Hiring%20with%20Nvaraa" data-email-picker class="btn btn--coral btn--lg magnetic">
+              Talk to us
+              <span class="btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </a>
+            <a href="tel:+918660405328" class="cta__phone">or call +91 86604 05328</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/nvaraa-logo.png" alt="Nvaraa" width="150" height="27" />
+          
+        </div>
+        <div class="footer__cols">
+          <div>
+            <h4>Contact</h4>
+            <a href="mailto:contact@nvaraa.com">contact@nvaraa.com</a>
+            <a href="tel:+918660405328">+91 86604 05328</a>
+          </div>
+          <div>
+            <h4>Office</h4>
+            <!-- Replace with the registered office address -->
+            <address>SLV, Kattigenahalli<br />Bangalore, Karnataka, 560064</address>
+          </div>
+          <div>
+            <h4>Follow</h4>
+            <a href="https://www.linkedin.com/company/nvaraa-solutions/" target="_blank" rel="noopener" class="footer__social">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.12v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-4v-11Z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> Nvaraa. All rights reserved.</span>
+        <a href="#top" class="footer__up">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ EMAIL PICKER ============ -->
+  <div class="mailpick" id="mailpick" hidden>
+    <div class="mailpick__backdrop" data-mailpick-close></div>
+    <div class="mailpick__panel" role="dialog" aria-modal="true" aria-labelledby="mailpickTitle">
+      <button class="mailpick__close" type="button" aria-label="Close" data-mailpick-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <p class="mailpick__eyebrow">Talk to us</p>
+      <h2 class="mailpick__title" id="mailpickTitle">How would you like to <em>email us?</em></h2>
+      <button class="mailpick__addr" type="button" id="mailpickCopy" aria-label="Copy email address contact@nvaraa.com">
+        <span class="mailpick__email">contact@nvaraa.com</span>
+        <span class="mailpick__copy">
+          <svg class="mailpick__copy-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="12" height="12" rx="2.5"/><path d="M15.5 8.5V6a2.5 2.5 0 0 0-2.5-2.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5"/></svg>
+          <svg class="mailpick__copy-done" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+        </span>
+      </button>
+
+      <div class="mailpick__list">
+        <a class="mailpick__opt" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=contact@nvaraa.com&amp;su=Hiring%20with%20Nvaraa" target="_blank" rel="noopener">
+          <span class="mailpick__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M3 8.5h18M6.5 6.5h.01M9 6.5h.01"/></svg></span>
+          <span class="mailpick__text"><b>Open in Gmail</b></span>
+          <svg class="mailpick__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+
+        <a class="mailpick__opt" href="mailto:contact@nvaraa.com?subject=Hiring%20with%20Nvaraa">
+          <span class="mailpick__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg></span>
+          <span class="mailpick__text"><b>Use my mail app</b></span>
+          <svg class="mailpick__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
